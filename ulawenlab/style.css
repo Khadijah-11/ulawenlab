@@ -1,0 +1,117 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a; /* Deep black */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Colors */
+:root {
+    --black: #0a0a0a;
+    --dark-green: #004d40; /* Dark green for highlights */
+    --light-grey: #c7c7c7;
+}
+
+/* Header */
+.header {
+    background-color: var(--black);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    border-bottom: 4px solid var(--dark-green);
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    color: var(--dark-green); /* Dark green title */
+    margin-bottom: 1rem;
+}
+
+.header-content p {
+    font-size: 1.5rem;
+    color: var(--light-grey);
+}
+
+/* About Section */
+.about {
+    padding: 4rem 2rem;
+    background-color: var(--black);
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--dark-green);
+}
+
+.about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--light-grey);
+}
+
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background-color: #121212;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--dark-green); /* Green accent */
+}
+
+.project-gallery {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 300px;
+    background-color: var(--dark-green);
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    background-color: var(--black);
+}
+
+.project-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-item p {
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--light-grey);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--black);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--light-grey);
+    border-top: 4px solid var(--dark-green);
+}
+
